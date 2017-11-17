@@ -1,6 +1,12 @@
+language: node_js
+
+node_js: '6'
+
+cache: yarn
+
 # Clean and don't fail
 install:
-  - rm -rf public || exit 0
+  - yarn install
 
 # Build the website
 script:
