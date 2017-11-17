@@ -2,15 +2,7 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   <head>
     {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
-
-    <title>{{ block "title" . }}
-        {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
-    {{ end }}</title>
-
-    {{ if .RSSLink }}
-        <link href="{{ .RSSLink }}" title="{{ .Site.Title }}" type="application/rss+xml" rel="alternate">
-    {{ end }}
-
+    <title>{{ block "title" . }}{{ .Site.Title -}}{{ end }}</title>
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
   </head>
   <body>
