@@ -5,6 +5,7 @@ node_js: '6'
 cache: yarn
 
 before_script:
+  - npm install -g gulp
   - yarn install
 
 # Build the website
