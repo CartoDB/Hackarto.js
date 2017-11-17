@@ -4,6 +4,10 @@ node_js: '9'
 
 cache: yarn
 
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
+
 before_script:
   - yarn install
 
@@ -12,7 +16,7 @@ script:
   - gulp js
   - gulp fonts
   - gulp images
-  - binaries/hugo
+  - /snap/bin/hugo
 
 deploy:
   provider: pages
