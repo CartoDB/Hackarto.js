@@ -4,8 +4,7 @@ node_js: '6'
 
 cache: yarn
 
-# Clean and don't fail
-install:
+before_script:
   - yarn install
 
 # Build the website
