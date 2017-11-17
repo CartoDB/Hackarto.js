@@ -12,11 +12,7 @@ before_script:
   - yarn install
 
 script:
-  - gulp sass
-  - gulp js
-  - gulp fonts
-  - gulp images
-  - /snap/bin/hugo
+  - npm run build
 
 deploy:
   provider: pages
