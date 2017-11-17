@@ -5,10 +5,9 @@ node_js: '9'
 cache: yarn
 
 install:
-  - go get -u -v github.com/spf13/hugo
+  - sudo apt-get install hugo
 
 before_script:
-  - npm install -g gulp
   - yarn install
 
 script:
