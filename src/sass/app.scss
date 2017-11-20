@@ -6,7 +6,6 @@ $hackartoColor: #EE433F;
 body {
 	overflow-x: hidden;
 }
-
 .container {
 	max-width: $mainSize;
 }
@@ -79,9 +78,25 @@ h4 {
 }
 .documentation {
 	background: #F9F9F9;
+	overflow: hidden;
+}
+.documentation-image {
+	position: relative;
+	align-items: center;
+	justify-content: flex-end;
+}
+.documentation-image:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(#000, 0) 90%, rgba(#000, 0.2) 100%);
+	z-index: 1;
 }
 .documentation-content {
-	max-width: 550px;
+	padding-left: 80px;
 }
 .support {
 	position: relative;
@@ -110,6 +125,5 @@ h4 {
 	background: #F9F9F9;
 }
 .footer-text {
-	text-align: right;
+ text-align: right;
 }
-
