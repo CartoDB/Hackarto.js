@@ -38,7 +38,8 @@ h4 {
 }
 .register-participants {
 	position: absolute;
-	left: 0;
+	right: 50%;
+	transform: translateX(250px);
 	bottom: 75px;
 	align-items: flex-end;
 	z-index: 1;
@@ -84,7 +85,6 @@ h4 {
 	position: relative;
 	align-items: center;
 	justify-content: flex-end;
-
 	// Cutrada
 	svg {
 		margin-right: -10px;
@@ -101,7 +101,7 @@ h4 {
 	z-index: 1;
 }
 .documentation-content {
-	padding-left: 80px;
+  padding-left: 80px;
 }
 .support {
 	position: relative;
@@ -113,9 +113,9 @@ h4 {
 }
 .support-logo {
 	position: absolute;
-	z-index: 1;
 	left: 70%;
 	top: -100px;
+	z-index: 1;
 }
 .jury-list {
 	flex-wrap: wrap;
