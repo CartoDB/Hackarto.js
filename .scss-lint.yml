@@ -1,3 +1,4 @@
+scss_files: "src/sass/*.scss"
 linters:
   BangFormat:
     enabled: true
